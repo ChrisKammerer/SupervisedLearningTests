@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\diabetes_data\diabetes_data_train.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\iris_data\iris.csv">
           <value>
             <Attribute>
@@ -25,13 +32,6 @@
           </value>
         </entry>
         <entry key="\iris_data\iris_train.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\raisin_data\Raisin_Dataset.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
