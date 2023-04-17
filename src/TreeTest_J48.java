@@ -16,10 +16,10 @@ import weka.gui.treevisualizer.PlaceNode2;
 import weka.gui.treevisualizer.TreeVisualizer;
 
 import java.awt.BorderLayout;
-import javax.swing.JFrame;
+
 
 import weka.core.converters.ConverterUtils.DataSource;
-import weka.core.Instances;
+
 
 public class TreeTest_J48 {
 
@@ -74,7 +74,7 @@ public class TreeTest_J48 {
     }
 
     private String getMatrixString(double[][] m) {
-        String out = "";
+        StringBuilder out = new StringBuilder();
 
         for (double[] doubles : m) {
             StringBuilder line = new StringBuilder();
@@ -82,10 +82,10 @@ public class TreeTest_J48 {
                 line.append((int) doubles[c]).append(" ");
             }
             line.append("\n");
-            out += line;
+            out.append(line);
         }
 
-        return out;
+        return out.toString();
     }
 
     public Instances getData(String dataPath, int classIndex) {
