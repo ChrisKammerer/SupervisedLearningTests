@@ -2,7 +2,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class DataSet {
@@ -55,6 +54,15 @@ public class DataSet {
     public Record getDataAtIndex(int i){return data.get(i);}
 
     public ArrayList<String> getAttributeList(){return attributeList;}
+
+    public ArrayList<String> getAttributeListCopy(){return (ArrayList<String>) attributeList.clone();}
+
+//    public Record getRecordAtAttribute(String attr){
+//        for(Record record : data){
+//            if(record.getClassification().equals(attr)) return record;
+//        }
+//        return null;
+//    }
 
     public String toString(){
         StringBuilder output = new StringBuilder();

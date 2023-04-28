@@ -22,4 +22,9 @@ public class Attribute {
     public String toString(){return fields.toString();}
 
     public void removeAttributeAtIndex(int i){fields.remove(i);}
+
+    public String getValueAtIndex(int index){
+        return fields.get(index);
+    }
+
 }
